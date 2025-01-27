@@ -5,6 +5,11 @@ import streamlit as st
 # Cargar los datos
 car_data = pd.read_csv('vehicles_us.csv')
 
+# Encabezado
+st.title('Análisis Exploratorio de Datos (EDA)')
+st.write("Este cuaderno realiza un análisis exploratorio sobre un conjunto de datos de vehículos, "
+         "utilizando visualizaciones interactivas como histogramas y gráficos de dispersión.")
+
 # Botón para construir el histograma
 hist_button = st.button('Construir histograma') 
 
